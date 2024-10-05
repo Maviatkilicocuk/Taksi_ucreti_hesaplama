@@ -1,0 +1,28 @@
+package Giris;
+import java.util.Scanner;
+public class Taksi_Metre {
+    public static void main(String[] args) {
+
+        double KM, tutar, t;
+
+
+        Scanner input = new Scanner(System.in);
+
+        t = 2.2;
+
+
+        System.out.print(" Gidiline KM'yi yazınız = ");
+        KM = input.nextDouble();
+
+        tutar = 10 + (t*KM);
+        Boolean min = tutar > 20;
+
+        String Geri_donus = min ? "Ödemeniz gereken ücret = "  +tutar : "Minimum ödenecek ücret 20 TL'dir";
+
+        System.out.print(" " + Geri_donus);
+
+
+
+
+    }
+}
